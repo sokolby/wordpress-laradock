@@ -1,5 +1,5 @@
 # Overview
-Laradock based docker environment for Wordpress site
+[Laradock](http://laradock.io/) based docker environment for Wordpress site
 
 # Install
 
@@ -26,6 +26,13 @@ Useful links: [Docker for Mac](https://download.docker.com/mac/stable/Docker.dmg
 Then make installation:
 
 `./scripts/install-docker-env.sh`
+
+_This script has a list of options:_
+* `-n|--no-theme-required` do not require wp-content dir exists
+* `-f|--force-reinstall` reinstall, remove laradock folder and perform the whole script again
+* `--skip-wp-install` do not download wordpress itself
+* `--skip-composer-install` do not run composer install anyway
+* `--skip-npm-install` do not run npm install anyway
 
 Issues: 
 * if there is no wp-content folder that means no wordpress at all, so you might loss the path but if you don't and it's just new project from scratch try again with -n option.
@@ -73,3 +80,5 @@ Done
 ### Xdebug with PHPStorm
 
 ![image](https://user-images.githubusercontent.com/1494325/56646188-c435f780-6687-11e9-84d9-0cf69822ea62.png)
+
+[Laradock github](https://github.com/laradock/laradock)
